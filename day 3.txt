@@ -1,0 +1,120 @@
+1.PRINT ODD NUMBERS IN AN ARRAY
+
+a.) Arrow function:
+     odd Numbers= (array)=>{
+      for(var i=0; i< array.length ; i++){
+         If (array[i]%2!=0){
+         console.log(array[i])
+}
+    }
+}
+b.) Anonymous function
+     function(array){
+         for(var i=0 ; i< array.length ; i++){
+         If (array[i]%2!=0){
+        console.log(array[i])
+     }
+}
+     }
+c.) IIFE Function
+     function(array){
+     for(var i= 0 ; i < array.length ; i++){
+     If (array[i]%2!= 0){
+     console.log(array[i])
+}
+   }
+}
+
+2. Return all the prime numbers in an array
+
+a.) Arrow function 
+     primeNumbers = (numArray) =>{
+     numArray = numArray.filter((number) =>{
+     For ( var i = 2; i<= Math.sqrt(number); i++){
+      If (number% i===0) return false;
+}
+    return true;
+});
+ console.log(numArray);
+}
+
+b.) Anonymous function
+     function(numArray){
+     numArray = numArray.filter((number) => {
+     For (var i = 2; i<= Math.sqrt(number); i++) {
+If (number% i ===0) return false;
+}
+Return true;
+});
+console.log(numArray);
+}
+
+C.) IIFE Function
+(function (numArray){
+numArray = numArray.filter((number) =>{
+for(var i= 2; i <= Math.sqrt(number); i++) {
+If (number% i ===0) return false;
+}
+Return true;
+});
+console.log(numArray);
+})([1,2,3,4])
+
+3. Sum of all numbers in an array
+
+ a.) Arrow function
+     Sum = (array)=>{
+      Var sum = 0;
+         For ( var i=0 ; i< array.length ; I++){
+         Sum = sum + array[i];
+}
+    Return sum;
+}
+
+b.) Anonymous function
+     function(array){
+  Var sum = 0;
+   for(var i= 0; i< array.length ; i++){
+  Sum = sum + array[i];
+}
+Return sum;
+}
+
+c.) IIFE function
+( function(array){
+  Var sum = 0;
+   for(var i= 0; i< array.length ; i++){
+  Sum = sum + array[i];
+}
+Return sum;
+})([ 1,2,3,4])
+
+4.) Convert all the strings to title caps in a string array
+
+a.) Arrow function 
+ Titlecase = (str) => {
+Str = str.toLoweCase().split(‘ “);
+For ( var i= 0; i< str.length ; i++) {
+   Str[i] = str [i].charAt(0). toUpperCase() + str[i].slice(1);
+}
+ Return str.join(“ “);
+}
+
+b.) Anonymous function
+ function (str)  {
+Str = str.toLoweCase().split(“ “);
+For ( var i= 0; i< str.length ; i++) {
+   Str[i] = str [i].charAt(0). toUpperCase() + str[i].slice(1);
+}
+ Return str.join(“ “);
+}
+
+c.) IIFE function
+(
+ function (str)  {
+Str = str.toLoweCase().split(“ “);
+For ( var i= 0; i< str.length ; i++) {
+   Str[i] = str [i].charAt(0). toUpperCase() + str[i].slice(1);
+}
+ Return str.join(“ “);
+})(“ DHONI IS MY IDOL”);
